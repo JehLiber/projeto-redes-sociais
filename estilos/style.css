@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*seletor universal, estilo de forma global dos elementos html*/
+*{
+    margin: 0px; /*margem 0 na página */
+    padding: 0px; /*espaçamento 0 na página*/
+    font-family: Arial, Helvetica, sans-serif; /*fonte padronizada para á página*/
+}
+/*as mesmas modificações para ambas tags*/
+html, body{
+    height: 100vh; /*vh = altura */
+    width: 100vw; /*vw = largura*/
+    
+}
+
+body{
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed; /*ajuda a fixar/centralizar o fundo*/
+}
+main{
+    position: relative; /*posiciona em relação á sua própria posição original do fluxo da página*/
+    height: 100vh; /*vh = altura */
+
+    
+}
+section#telefone{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Geralmente usado com top: 50% e left: 50%. Enquanto o top/left move a ponta do objeto para o centro, o translate puxa o centro do objeto para o centro da tela */
+
+    height: 627px;
+    width: 311px;
+    background: url(../imagens/frame-iphone.png) no-repeat;
+
+    
+}
